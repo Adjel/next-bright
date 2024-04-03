@@ -1,8 +1,6 @@
 import React from "react";
 import { Code } from "bright";
-import FirstSnippetShown from "../components/HomeViewModel/FirstSnippetShown";
-import SecondSnippetShown from "../components/isSecondSnippetShown/SecondSnippetShown";
-import ThirdSnippetShown from "../components/ThirdSnippetShown/ThirdSnippetShown";
+import SnippetReveal from "../components/HomeViewModel/SnippetReveal";
 
 function Home() {
   return (
@@ -15,34 +13,34 @@ function Home() {
         Python automatically determines the data type based on the value you
         assign.
       </p>
-      <FirstSnippetShown>
+      <SnippetReveal>
         <Code className="code-snippet" theme="dracula" lang="py">
           {FIRST_SNIPPET}
         </Code>
-      </FirstSnippetShown>
+      </SnippetReveal>
       <h2>Control Flow: Conditionals and Loops</h2>
       <p>
         Python has standard control flow structures like if statements, for and
         while loops.
       </p>
-      <SecondSnippetShown>
+      <SnippetReveal>
         {" "}
         <Code className="code-snippet" theme="dracula" lang="py">
           {SECOND_SNIPPET}
         </Code>
-      </SecondSnippetShown>
+      </SnippetReveal>
       <h2>Functions and Basic Data Structures</h2>
       <p>
         In Python, you can define your own functions using the def keyword.
         Python also has built-in data structures like lists and dictionaries.
       </p>
 
-      <ThirdSnippetShown>
+      <SnippetReveal>
         {" "}
         <Code className="code-snippet" theme="dracula" lang="py">
           {THIRD_SNIPPET}
         </Code>
-      </ThirdSnippetShown>
+      </SnippetReveal>
     </main>
   );
 }
